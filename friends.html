@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="mn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>My friends</title>
     <style>
         body {
-            background-color: rgb(173, 211, 230); /* Арын өнгө */
+            background-color: rgb(173, 211, 237);
+            font-family: Arial, sans-serif;
         }
 
         h1 {
-            color: rgb(0, 12, 139); /* Фонтын өнгө */
+            color: rgb(0, 0, 100);
         }
 
         td {
             text-align: center;
             vertical-align: middle;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
         }
 
         button {
@@ -40,7 +51,7 @@
         }
 
         button:hover {
-            background-color: rgb(74, 0, 211);
+            background-color: rgb(50, 50, 200);
         }
     </style>
 </head>
@@ -50,31 +61,37 @@
     <table border="1" width="100%" height="720px">
         <tr height="10%">
             <td colspan="3">
-                <strong><b>Нүүр хуудас</b></strong>
+                <strong><b>Манай гэр бүл</b></strong>
             </td>
         </tr>
 
         <tr>
             <td width="15%">
-                <strong>Дараагийн хуудсууд:</strong> <br><br>
-                <button><a href="about.html">about me</a></button>
+                <strong>Холбоосууд:</strong> <br><br>
+                <button><a href="index.html">home</a></button>
                 <button><a href="contact.html">contact me</a></button>
+                <button><a href="about.html">about me</a></button>
                 <button><a href="family.html">my family</a></button>
-                <button><a href="friends.html">my friends</a></button>
             </td>
 
             <td width="65%">
-                <img src="kka.jpeg.jpg" alt="Миний зураг" width="300px">
-                <i><p>Миний танилцуулгыг уншиж байгаа таньд энэ өдрийн мэндийг хүргэе.</p></i>
+                <div class="image-container">
+                    <img src="kkk.jpeg.jpg" alt="friends">
+                    <img src="hhh.jpeg.jpg" alt="friends">
+                    <img src="jjj.jpeg.jpg" alt="friends">
+                </div>
+                <p>Хамгийн эрхэм хүмүүс минь</p>
             </td>
-
+            <td width="65%">
+            <img src="dd.jpeg.jpeg" alt="Гэр бүлийн зураг">
+            <p>Бөөн хөөрхөн хүмүүс</p>
+            </td>
             <td rowspan="2" width="20%"></td>
-        </tr>
+
 
         <tr height="10%">
-            <td colspan="2">Дараагийн хуудаснаас илүү ихийг үзнэ үү.</td>
+            <td colspan="2">Үргэлжлэлийг дараагийн хуудаснаас үзнэ үү.</td>
         </tr>
-
     </table>
 
 </body>
