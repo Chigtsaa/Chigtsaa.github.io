@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My family</title>
+    <style>
+        body {
+            background-color: rgb(173, 211, 237);
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: rgb(0, 0, 100);
+        }
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 12px;
+            background-color: rgb(100, 100, 255);
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 160px;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        button:hover {
+            background-color: rgb(50, 50, 200);
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1" width="100%" height="720px">
+        <tr height="10%">
+            <td colspan="3">
+                <strong><b>Манай гэр бүл</b></strong>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="15%">
+                <strong>Холбоосууд:</strong> <br><br>
+                <button><a href="index.html">home</a></button>
+                <button><a href="contact.html">contact me</a></button>
+                <button><a href="about.html">about me</a></button>
+                <button><a href="friends.html">my friends</a></button>
+            </td>
+
+            <td width="65%">
+                <div class="image-container">
+                    <img src="mmm.jpeg.webp" alt="Гэр бүлийн зураг">
+                    <img src="jja.jpeg.jpg" alt="Гэр бүлийн зураг">
+                    <img src="mma.jpeg.jpg" alt="Гэр бүлийн зураг">
+                </div>
+                <p>Хамгийн хайртай хүмүүс минь</p>
+            </td>
+            <td width="65%">
+            <img src="hha.jpeg.jpg" alt="Гэр бүлийн зураг">
+            <p>Хөөрхөн төрлүүдтэйгээ</p>
+            </td>
+            <td rowspan="2" width="20%"></td>
+
+
+        <tr height="10%">
+            <td colspan="2">Үргэлжлэлийг дараагийн хуудаснаас үзнэ үү.</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
