@@ -4,9 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover a feature-rich website template with customizable UI elements, pre-designed blocks, and ready-to-use pages. Perfect for creating unique and professional websites.">
-  <meta name="keywords" content="professional, Bootstrap, 5, Website, template, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="description" content="Create a professional business website with our responsive Bootstrap 5 template. Pre-designed blocks, modern UI and SEO optimized.">
+  <meta name="keywords" content="bootstrap template, business website, professional UI, responsive design, SEO friendly">
   <meta name="author" content="elemis">
+  <meta property="og:description" content="Boost your online presence with our SEO-optimized, responsive Bootstrap 5 template.">
+  <meta property="og:image" content="https://example.com/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://example.com/">
+  <meta name="twitter:card" content="summary_large_image">
   <title>Professional Bootstrap 5 Website Template for Businesses | Demo Test</title>
   <link rel="shortcut icon" href="./assets/img/favicon.png">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,17 +18,39 @@
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Demo Test",
+      "url": "https://example.com",
+      "logo": "https://example.com/assets/img/logo-dark.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@email.com",
+        "telephone": "+441234567890",
+        "contactType": "customer support"
+      },
+      "sameAs": [
+        "https://twitter.com/yourhandle",
+        "https://facebook.com/yourpage",
+        "https://instagram.com/yourhandle"
+      ]
+    }
+    </script>
+
 </head>
 
 <body>
   <div class="content-wrapper">
-    <header class="wrapper bg-gray">
-      <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
+    <header class="wrapper bg-gray" role="banner">
+      <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none"  role="navigation" aria-label="Main Navigation">
         <div class="container">
           <div class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
             <div class="navbar-brand w-100">
               <a href="./index.html">
-                <img src="./assets/img/logo-dark.png" srcset="./assets/img/logo-dark@2x.png 2x" alt="demo test logo, Professional business demo website template using Bootstrap" />
+                <img src="./assets/img/logo-dark.png" srcset="./assets/img/logo-dark@2x.png 2x" loading="lazy" alt="Demo Test Logo - Business Bootstrap Template" />
               </a>
             </div>
             <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -35,22 +61,22 @@
               <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul class="navbar-nav">
                   <li class="nav-item dropdown dropdown-mega">
-                    <a class="nav-link dropdown-toggle" href="/demos" data-bs-toggle="dropdown">Demos</a>
+                    <a class="nav-link dropdown-toggle" href="/demos" data-bs-toggle="dropdown" aria-label="Explore Demos">Demos</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/pages" data-bs-toggle="dropdown">Pages</a>
+                    <a class="nav-link dropdown-toggle" href="/pages" data-bs-toggle="dropdown" aria-label="View Pages">Pages</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/projects" data-bs-toggle="dropdown">Projects</a>
+                    <a class="nav-link dropdown-toggle" href="/projects" data-bs-toggle="dropdown" aria-label="See Projects">Projects</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="blog" data-bs-toggle="dropdown">Blog</a>
+                    <a class="nav-link dropdown-toggle" href="blog" data-bs-toggle="dropdown" aria-label="Read Blog">Blog</a>
                   </li>
                   <li class="nav-item dropdown dropdown-mega">
-                    <a class="nav-link dropdown-toggle" href="/blocks" data-bs-toggle="dropdown">Blocks</a>
+                    <a class="nav-link dropdown-toggle" href="/blocks" data-bs-toggle="dropdown" aria-label="View UI Blocks">Blocks</a>
                   </li>
                   <li class="nav-item dropdown dropdown-mega">
-                    <a class="nav-link dropdown-toggle" href="/documentation" data-bs-toggle="dropdown">Documentation</a>
+                    <a class="nav-link dropdown-toggle" href="/documentation" data-bs-toggle="dropdown" aria-label="Read Documentation">Documentation</a>
                   </li>
                 </ul>
                 <!-- /.navbar-nav -->
@@ -99,15 +125,15 @@
       <!-- /.navbar -->
     </header>
     <!-- /header -->
-    <section class="wrapper bg-gray">
+    <section class="wrapper bg-gray" aria-labelledby="hero-title">
       <div class="container pt-12 pt-md-16 text-center">
         <div class="row">
           <div class="col-lg-8 col-xxl-7 mx-auto text-center" data-cues="slideInDown" data-group="page-title" data-delay="600">
             <h2 class="fs-16 text-uppercase ls-xl text-dark mb-4">Hello! This is demo test</h2>
-            <h1 class="display-1 fs-58 mb-7">We bring rapid solutions for your business.</h1>
+            <h1 id="hero-title" class="display-1 fs-58 mb-7">We bring rapid solutions for your business.</h1>
             <div class="d-flex justify-content-center mb-5 mb-md-0" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-              <span><a href="#" class="btn btn-lg btn-primary rounded-pill me-2">Explore Now</a></span>
-              <span><a href="#" class="btn btn-lg btn-outline-primary rounded-pill">Contact Us</a></span>
+              <span><a href="#" class="btn btn-lg btn-primary rounded-pill me-2" aria-label="Explore Demo Template Now">Explore Now</a></span>
+              <span><a href="#" class="btn btn-lg btn-outline-primary rounded-pill" aria-label="Contact Us Today">Contact Us</a></span>
             </div>
           </div>
           <!--/column -->
@@ -115,16 +141,16 @@
         <!-- /.row -->
       </div>
       <!-- /.container -->
-      <figure class="position-absolute" style="bottom: 0; left: 0; z-index: 2;"><img src="./assets/img/photos/bg11.jpg" alt="Demo Test background image" /></figure>
+      <figure class="position-absolute" style="bottom: 0; left: 0; z-index: 2;"><img src="./assets/img/photos/bg11.jpg" loading="lazy" alt="Business team working on project background"/></figure>
     </section>
     <!-- /section -->
-    <section class="wrapper bg-gray">
+    <section class="wrapper bg-gray" aria-labelledby="services">
       <div class="container">
         <div class="card shadow-none my-n13 my-md-n15 my-lg-n17">
           <div class="card-body py-12 py-lg-14 px-lg-11 py-xl-16 px-xl-13">
             <div class="row text-center">
               <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">What We Do?</h2>
+                <h2 class="fs-15 text-uppercase text-muted mb-3" id="services">Our Services</h2>
                 <h3 class="display-4 mb-9">The service we offer is specifically designed to meet your needs.</h3>
               </div>
               <!-- /column -->
@@ -135,28 +161,28 @@
                 <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5"> <i class="uil uil-phone-volume"></i> </div>
                 <h4>24/7 Support</h4>
                 <p class="mb-3">Reliable, round-the-clock support to ensure uninterrupted business operations.</p>
-                <a href="#" class="more hover link-purple">Learn More</a>
+                <a href="/services/support" aria-label="Learn more about our 24/7 Support Services" class="more hover link-purple" >Learn More</a>
               </div>
               <!--/column -->
               <div class="col-md-4">
                 <div class="icon btn btn-block btn-lg btn-soft-green pe-none mb-5"> <i class="uil uil-shield-exclamation"></i> </div>
                 <h4>Secure Payments</h4>
                 <p class="mb-3">Protecting your transactions with advanced payment security protocols.</p>
-                <a href="#" class="more hover link-green">Learn More</a>
+                <a href="/services/payments" class="more hover link-green" aria-label="Learn More About Secure Payments">Learn More</a>
               </div>
               <!--/column -->
               <div class="col-md-4">
                 <div class="icon btn btn-block btn-lg btn-soft-orange pe-none mb-5"> <i class="uil uil-laptop-cloud"></i> </div>
                 <h4>Daily Updates</h4>
                 <p class="mb-3">Stay informed with daily performance insights and progress updates.</p>
-                <a href="#" class="more hover link-orange">Learn More</a>
+                <a href="/services/updates" class="more hover link-orange" aria-label="Learn More About Daily Updates">Learn More</a>
               </div>
               <!--/column -->
             </div>
             <!--/.row -->
             <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
               <div class="col-lg-6">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Our Approach</h2>
+                <h2 class="fs-15 text-uppercase text-muted mb-3" id="approach">Our Strategic Approach</h2>
                 <h3 class="display-4 mb-5">Three Strategic Steps to Drive Successful Business Projects</h3>
                 <p>We begin by understanding your unique goals and challenges. This foundation allows us to design tailored solutions that align with your business vision and market trends.</p>
                 <p class="mb-6">Our structured process ensures efficiency, adaptability, and results—from idea generation to final execution. With continuous collaboration, we deliver solutions that make an impact.</p>
