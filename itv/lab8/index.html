@@ -48,7 +48,7 @@
       border: none;
       border-radius: 50%;
       color: white;
-      background-color: #333;
+      background-color: #333333;
     }
 
     .keypad button.operator {
@@ -152,8 +152,15 @@
       }
     }
 
-    function appendSymbol(sym) {
-      document.getElementById("amount").value += sym;
+    function appendSymbol(symbol) {
+      const amount = document.getElementById("amount");
+    
+      if (symbol === '.') {
+       
+        if (amount.value.includes('.')) return;
+      }
+    
+      amount.value += symbol;
     }
 
     function clearInput() {
